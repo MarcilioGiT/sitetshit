@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panda T-ShiT | Melhor da Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .main-nav .icon-cart {
+      vertical-align: middle;
+      margin-right: 0.4em;
+      transition: filter 0.2s;
+    }
+    .main-nav a.active .icon-cart {
+      filter: drop-shadow(0 0 2px #7c5c3e);
+      stroke: #a97c50;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-bg">
+    <div class="header-container">
+        <div class="logo-box">
+        <span class="logo-text">Panda T-ShiT</span>
+        <img src="./fotos/Panda.png" class="logo-art" alt="Panda Style">
+      </div>
+      </a>
+      <div class="header-title-area">
+        <span class="byline">Panda T-ShiT</span>
+        <span class="whatsapp">Fale pelo WhatsApp</span>
+      </div>
+      <div class="header-icons">
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="Contato"><span>Entre em Contato</span></a>
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="whatsapp"><img src="./whatsapp.png.png" height="24"/></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Loja</a>
+      <a href="Longline.html">Longline</a>
+      <a href="Tradicionais.html">Tradicionais</a>
+      <a href="Oversized.html">Oversized</a>
+      <a href="Feminino.html">Feminino</a>
+      <a href="Infantil.html">Infantil</a>
+      <div class="mais-dropdown">
+        <a href="#" class="mais-btn">Mais ▾</a>
+        <div class="mais-menu">
+          <a href="sobre.html">Sobre</a>
+        </div>
+      </div>
+      <a href="cart.html" class="active"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#7c5c3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h2l2.36 12.24a2 2 0 0 0 2 1.76h9.68a2 2 0 0 0 2-1.76L23 6H6"></path></svg><span class="cart-badge">0</span> Carrinho</a>
+    </nav>
+  </header>
+  <main class="cart-main">
+    <h1 class="cart-title">Seu Carrinho</h1>
+    <a href="index.html" class="adicionar-mais-btn">Adicionar mais produtos</a>
+    <div id="cart-items"></div>
+    <div class="cart-frete-area">
+      <label for="cep">Calcule o frete (saindo de Fortaleza/CE):</label>
+      <input type="text" id="cep" maxlength="9" placeholder="Seu CEP">
+      <button id="calcular-frete">Calcular</button>
+      <span id="frete-valor"></span>
+    </div>
+    <div class="cart-total-area">
+      <span id="cart-total"></span>
+    </div>
+    <button id="whatsapp-btn" class="finalizar-btn">Finalizar compra no WhatsApp</button>
+    <p class="cart-instrucao">OBRIGADO VOLTE SEMPRE!<code></code></p>
+  </main>
+  <footer class="footer-bg">
+    <div class="footer-creditos">Créditos do site para Marcílio GiT Dev</div>
+    <div class="footer-social">
+      <a href="https://instagram.com/marciliogit" target="_blank" rel="noopener">
+        <img src="./fotos/instagram.png" alt="Instagram" height="24"/>
+      </a>
+    </div>
+  </footer>
+  <script src="js/cart.js"></script>
+</body>
+</html>

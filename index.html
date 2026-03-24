@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panda T-ShiT | Melhor da Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body class="index-page">
+  <header class="header-bg">
+    <div class="header-container">
+      <div class="logo-box">
+        <span class="logo-text">Panda T-ShiT</span>
+        <img src="./fotos/Panda.png" class="logo-art" alt="Panda Style">
+      </div>
+      <div class="header-title-area">
+        <span class="byline">Panda T-ShiT</span>
+        <span class="whatsapp">Fale pelo WhatsApp</span>
+      </div>
+      <div class="header-icons">
+        <a href="https://wa.me/5585985544951" target="_blank" rel="noopener noreferrer" aria-label="Contato">
+    <span>Entre em Contato</span>
+  </a>
+        <a href="https://wa.me/5585985544951" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <img src="./whatsapp.png.png" height="24" alt="WhatsApp"/>
+  </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Loja</a>
+      <a href="Longline.html">Longline</a>
+      <a href="Tradicionais.html">Tradicionais</a>
+      <a href="Oversized.html">Oversized</a>
+      <a href="Feminino.html">Feminino</a>
+      <a href="Infantil.html">Infantil</a>
+      <div class="mais-dropdown">
+        <a href="#" class="mais-btn">Mais ▾</a>
+        <div class="mais-menu">
+          <a href="sobre.html">Sobre</a>
+        </div>
+      </div>
+      <a href="cart.html"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#7c5c3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h2l2.36 12.24a2 2 0 0 0 2 1.76h9.68a2 2 0 0 0 2-1.76L23 6H6"></path></svg><span class="cart-badge">0</span> Carrinho</a>
+    </nav>
+  </header>
+  <main class="produtos-bg">
+    <h1 class="cat-title">PROMOÇÕES</h1>
+    <section class="produtos-lista">
+      <div class="produto-card" data-nome="CAMISETA LONGLINE" data-img="./camisetas longline/Promoção.png" data-preco="49">
+        <img src="./camisetas longline/Promoção.png" alt="CAMISETA LONGLINE">
+        <h3>CAMISETA LONGLINE</h3>
+        <span>R$49,00</span>
+        <a href="Longline.html" class="btn-opcoes">Ofertas</a>
+      </div>
+      <div class="produto-card" data-nome="CAMISETA OVERSIZED" data-img="./camisetas oversized/PROMOÇÃO.PNG" data-preco="69">
+        <img src="./camisetas oversized/PROMOÇÃO.PNG" alt="CAMISETA OVERSIZED">
+        <h3>CAMISETA OVERSIZED</h3>
+        <span>R$69,00</span>
+        <a href="Oversized.html" class="btn-opcoes">Ofertas</a>
+      </div>
+      <div class="produto-card" data-nome="CAMISETAS INFANTIL" data-img="./camisetas tradicionais/Promoção.png" data-preco="35">
+        <img src="./camisetas Infantil/Promoção.png" alt="CAMISETAS TRADICIONAIS">
+        <h3>CAMISETAS TRADICIONAIS</h3>
+        <span>R$35,00</span>
+        <a href="Tradicionais.html" class="btn-opcoes">Ofertas</a>
+      </div>
+
+      <div class="produto-card" data-nome="CAMISETAS FEMININA" data-img="./camisetas feminino/Promoção.png" data-preco="49">
+        <img src="./camisetas feminino/Promoção.png" alt="CAMISETAS FEMININA">
+        <h3>CAMISETAS FEMININA</h3>
+        <span>R$49,00</span>
+        <a href="Feminino.html" class="btn-opcoes">Ofertas</a>
+      </div>
+    </section>
+    <section class="beneficios">
+      <div class="beneficio-item">
+        <img src="./fotos/frete.png" alt="Frete">
+        <span>Frete ou Entrega</span>
+      </div>
+      <div class="beneficio-item">
+        <img src="./fotos/envio.png" alt="Envio">
+        <span>Enviamos para toda Fortaleza</span>
+      </div>
+      <div class="beneficio-item">
+        <img src="./fotos/pagamentos.png" alt="Cartão Crédito">
+        <span>Cartão de Crédito ou PIX</span>
+      </div>
+      <div class="beneficio-item">
+        <img src="./fotos/certificado.png" alt="Seguro">
+        <span>100% Seguro Certificado SSL</span>
+      </div>
+    </section>
+  </main>
+  <div class="modal-bg" id="modal-bg">
+    <div class="modal-produto" id="modal-produto">
+      <button id="fechar-modal" class="fechar-modal">&times;</button>
+      <img id="modal-img" src="" alt="" class="modal-img">
+      <h3 id="modal-nome"></h3>
+      <span id="modal-preco"></span>
+      <div class="modal-qtd-area">
+        <label for="modal-qtd">Quantidade:</label>
+        <button id="modal-menor" class="qtd-btn">-</button>
+        <input id="modal-qtd" type="number" min="1" value="1">
+        <button id="modal-maior" class="qtd-btn">+</button>
+      </div>
+      <button id="modal-adicionar" class="modal-adicionar">Adicionar ao Carrinho</button>
+      <div id="modal-feedback" class="modal-feedback"></div>
+    </div>
+  </div>
+  <footer class="footer-bg">
+    <div class="footer-links">
+      <div>
+        <h4>Loja</h4>
+        <ul>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="https://wa.me/5585985544951" target="_blank" rel="noopener noreferrer">Contato</a></li>
+          <li><a href="https://wa.me/5585985544951" target="_blank" rel="noopener noreferrer">Trocas e Devoluções</a></li>
+          <li><a href="./cuidados.html">Cuidados com seu Pedido</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Segurança</h4>
+        <p>Ambiente 100% Seguro. Sua Informação é Protegida Pela Criptografia SSL 256-Bit.</p>
+        <h5>Métodos de pagamentos aceitos</h5>
+        <img src="./fotos/pagamentos.png" alt="Pagamentos">
+      </div>
+      <div>
+        <h4>Junte-se à lista de emails e não perca as novidades</h4>
+        <input type="email" placeholder="Insira o seu email aqui">
+        <button>Assine Já</button>
+      </div>
+    </div>
+    <div class="footer-creditos">
+      Créditos do site para Marcílio GiT Dev
+    </div>
+    <div class="footer-social">
+      <a href="https://instagram.com/marciliogit" target="_blank" rel="noopener">
+        <img src="./fotos/instagram.png" alt="Instagram" height="24"/>
+      </a>
+    </div>
+  </footer>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

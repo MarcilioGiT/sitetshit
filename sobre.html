@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panda T-ShiT | Melhor da Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 24px;
+    }
+    .logo-art {
+      display: block;
+      width: 300px;
+      height: 100px;
+      margin-top: 0.1em;
+      object-fit: contain;
+    }
+    @media (max-width: 600px) {
+      .logo-text {
+        font-size: 1.3rem;
+      }
+      .logo-art {
+        width: 32px;
+      }
+    }
+    .icon-cart {
+      vertical-align: middle;
+      margin-right: 0.4em;
+      display: inline-block;
+      transition: stroke 0.2s;
+    }
+    .main-nav a[href*="cart"] {
+      font-weight: 600;
+      color: #7c5c3e;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3em;
+    }
+    .main-nav a[href*="cart"]:hover .icon-cart {
+      stroke: #bfa77a;
+    }
+    .cart-badge {
+      display: inline-block;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 5px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      background: #bfa77a;
+      border-radius: 9px;
+      text-align: center;
+      line-height: 18px;
+      margin-left: -8px;
+      margin-right: 4px;
+      vertical-align: top;
+      box-shadow: 0 1px 4px #e2cdb0;
+      transition: background 0.2s;
+    }
+    .main-nav a[href*="cart"]:hover .cart-badge {
+      background: #7c5c3e;
+    }
+    .sobre-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .sobre-hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .sobre-hero h1 {
+      font-size: 2.5rem;
+      color: #7c5c3e;
+      margin-bottom: 1rem;
+    }
+    .sobre-hero p {
+      font-size: 1.2rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    .sobre-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .sobre-section h2 {
+      color: #7c5c3e;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .sobre-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .destaque {
+      background: #f5e9d6;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #bfa77a;
+      margin: 1.5rem 0;
+    }
+    .destaque p {
+      color: #7c5c3e;
+      font-weight: 500;
+      margin: 0;
+    }
+    .product-list {
+      margin-left: 2rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-bg">
+    <div class="header-container">
+        <div class="logo-box">
+        <span class="logo-text">Panda T-ShiT</span>
+        <img src="./fotos/Panda.png" class="logo-art" alt="Panda Style">
+      </div>
+      </a>
+      <div class="header-title-area">
+        <span class="byline">Panda</span>
+        <span class="whatsapp">Fale pelo WhatsApp</span>
+      </div>
+      <div class="header-icons">
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="Contato via WhatsApp" target="_blank" rel="noopener noreferrer">
+          <span>Entre em Contato</span>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5585985544951" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <img src="./whatsapp.png.png" height="24" alt="Ícone WhatsApp" />
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Loja</a>
+      <a href="Longline.html">Longline</a>
+      <a href="Tradicionais.html">Tradicionais</a>
+      <a href="Oversized.html">Oversized</a>
+      <a href="Feminino.html">Feminino</a>
+      <a href="Infantil.html">Infantil</a>
+      <div class="mais-dropdown">
+        <a href="#" class="mais-btn">Mais ▾</a>
+        <div class="mais-menu">
+          <a href="sobre.html" class="active">Sobre</a>
+        </div>
+      </div>
+      <a href="cart.html" aria-label="Carrinho de compras">
+        <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#7c5c3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h2l2.36 12.24a2 2 0 0 0 2 1.76h9.68a2 2 0 0 0 2-1.76L23 6H6"/>
+        </svg>
+        <span class="cart-badge">0</span> Carrinho
+      </a>
+    </nav>
+  </header>
+
+  <main class="sobre-content">
+    <div class="sobre-hero">
+      <h1>Sobre a Panda T-ShiT</h1>
+      <p>Artesanato em macramê feito com amor e dedicação por Nirlanda</p>
+    </div>
+
+    <div class="sobre-section">
+      <h2>Nossa História</h2>
+      <p>A Panda T-Shirt nasceu com o propósito de levar estilo, conforto e autenticidade para o seu dia a dia. Somos uma loja física e virtual especializada em moda, trazendo as melhores tendências com qualidade e preço acessível.
+
+Trabalhamos com peças selecionadas, com foco em camisetas modernas, versáteis e cheias de personalidade, ideais para quem quer se destacar em qualquer ocasião.
+
+Nosso compromisso é oferecer uma experiência completa aos nossos clientes, desde o atendimento até a entrega, sempre com transparência, agilidade e respeito.
+
+Seja na loja física ou online, a Panda T-Shirt é o seu destino certo para se vestir bem e com atitude...</p>
+      <div class="destaque">
+        <p>"A Panda T-Shirt não é só uma loja — é estilo, atitude e identidade.
+
+Criada para quem quer se destacar, oferecemos roupas modernas, confortáveis e com aquele diferencial que faz você chamar atenção por onde passa. Atuamos tanto no físico quanto no digital, garantindo praticidade e confiança na sua compra.
+
+Aqui, cada peça é pensada para valorizar seu estilo e elevar sua presença. Nosso objetivo é simples: fazer você se sentir bem, confiante e pronto para qualquer ocasião."</p>
+      </div>
+    </div>
+
+    <div class="sobre-section">
+      <h2>O que é Panda T-ShiT?</h2>
+      <p>Panda T-Shirt = uma marca de roupas (principalmente camisetas) com identidade própria, estilo moderno e acessível.</p>
+      <p>A Panda T-Shirt é uma marca de moda focada em camisetas modernas, que une estilo, conforto e atitude para o dia a dia.</p>
+    </div>
+
+    <div class="sobre-section">
+      <h2>Nossos Valores</h2>
+      <p><strong>Qualidade:</strong> Valorizamos a individualidade. Nossas peças são pensadas para destacar sua personalidade.</p>
+      <p><strong>Compromisso com o Cliente:</strong> Colocamos o cliente em primeiro lugar, oferecendo atendimento de qualidade, transparência e respeito.</p>
+      <p><strong>Inovação:</strong> Estamos sempre atentos às tendências para trazer novidades e manter nossa marca atual e relevante.</p>
+      <p><strong>Confiança:</strong> Construímos relações sólidas com nossos clientes, baseadas em honestidade e responsabilidade.</p>
+      <p><strong>Acessibilidade:</strong> Acreditamos que todos merecem se vestir bem, por isso buscamos unir estilo e preço justo.</p>
+    </div>
+
+    <div class="sobre-section">
+      <h2>Produtos Disponíveis</h2>
+      <p>Nossa linha inclui:</p>
+      <ul class="product-list">
+        <li>Camisetas básicas — confortáveis e ideais para o dia a dia</li>
+        <li>Camisetas estampadas — modernas, criativas e cheias de atitude</li>
+        <li>Camisetas oversized — tendência streetwear com estilo e conforto</li>
+        <li>Camisetas premium — qualidade superior e acabamento diferenciado</li>
+        <li>Moda casual — peças versáteis para diversas ocasiões</li>
+      </ul>
+    </div>
+
+    <a href="index.html">← Voltar para a página principal</a>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer-creditos">Créditos do site para Marcílio GiT Dev</div>
+    <div class="footer-social">
+      <a href="https://instagram.com/marciliogit" target="_blank" rel="noopener noreferrer">
+        <img src="./fotos/instagram.png" alt="Instagram de Marcílio" height="24" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
